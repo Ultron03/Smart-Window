@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Window</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css"></link>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="home.html"><img src="img/LOGO1.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+               <ul>
+                   <li><a href="home.html">HOME</a></li>
+                   <li><a href="aboutus.html">ABOUT US</a></li>
+                   <li><a href="working.html">WORKING</a></li>
+                   <li><a href="application.html">APPLICATION</a></li>
+                   <li><a href="career.html">CAREER</a></li>
+                   <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+           </div>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+<!---------------------------------Contact us-------------------------------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.059259093743!2d73.12803631448027!3d19.236248986996276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795d211889993%3A0x29cf8c3a208b636e!2sKalyan%20Railway%20Station!5e0!3m2!1sen!2sin!4v1636294604803!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<!----------------------Form---------------------------------------->
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+              <i class="fas fa-home"></i>
+                 <span>
+                   <h5>Shaitan Gali, khatra mehal, Adher nagar near Shamshan</h5>
+                   <p>Kalyan,Thane,INDIA</p>
+                 </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                   <span>
+                     <h5>+420 012345678</h5>
+                     <p>Monday to  Saturday</p>
+                   </span>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                   <span>
+                     <h5>smartwindow@420.com</h5>
+                     <p>Kalyan,Thane,INDIA</p>
+                   </span>
+            </div>
+       </div>
+            <div class="contact-col">
+                  <form action="">
+                      <input type="text"placeholder="Enter your Name" required>
+                      <input type="email"placeholder="Enter your Email" required>
+                      <input type="text"placeholder="Enter your Subject" required>
+                      <textarea  row="8" placeholder="Message"required></textarea>
+                      <button type="submit" class="hero-btn red-btn">Send Message</button>
+                  </form>
+            </div>
+    </div>
+</section>
+<!----------------------------------------------Footer-------------------------------------------------->  
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis suscipit quidem  temporibus ipsum quae cum perferendis iusto<br> consequuntur corrupti fuga veritatis vel, earum libero? Sequi ipsa velit a veniam!</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>  
+</section>
+<!-----------------------------Javascript for Toggle menu------------------------------------------>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

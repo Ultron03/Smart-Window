@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Window</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css"></link>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="home.html"><img src="img/LOGO1.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+               <ul>
+                   <li><a href="home.html">HOME</a></li>
+                   <li><a href="aboutus.html">ABOUT US</a></li>
+                   <li><a href="working.html">WORKING</a></li>
+                   <li><a href="application.html">APPLICATION</a></li>
+                   <li><a href="career.html">CAREER</a></li>
+                   <li><a href="contact.html">CONTACT US</a></li>
+               </ul>
+           </div>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+<!---------------------------------About Us Content-------------------------------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Spreading Knowledge is all What we want to do</h1>
+            <p>Information is expanding daily. How to get it out visually is important.Information is recorded in vast interconnecting networks. Each idea or image has hundreds, perhaps thousands, of associations and is connected to numerous other points in the mental network.</p>
+            <a href=""class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about us 1.jfif">
+        </div>
+    </div>
+</section>
+<!----------------------Comment Box---------------------------------------->
+<div class="comment-box">
+    <h3>Leave a Comment</h3>
+    <form class="comment-form">
+        <input type="text"placeholder="Enter Name">
+        <input type="email"placeholder="Enter Email">
+        <textarea row="5" placeholder="Your Comment"></textarea>
+        <button type="submit" class="hero-btn red-btn">POST COMMENT</form>
+    </form>
+</div>
+<!----------------------------------------------Footer-------------------------------------------------->  
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis suscipit quidem  temporibus ipsum quae cum perferendis iusto<br> consequuntur corrupti fuga veritatis vel, earum libero? Sequi ipsa velit a veniam!</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div> 
+</section>
+<!-----------------------------Javascript for Toggle menu------------------------------------------>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
